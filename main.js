@@ -10,7 +10,7 @@ function start() {
     
 }
 
-recognition.onresult = function run (event) {
+recognition.onresult = function     run (event) {
 
     console.log(event);
 
@@ -19,7 +19,21 @@ recognition.onresult = function run (event) {
 
     document.getElementById("textbox").innerText = Content;
 
+if( Content == "Hi."){
 
+    window.alert("Hello!");
 
+}
+
+if( Content == "Close."){
+
+   close();
+
+}
+if( Content == "Open."){
+
+    open("https://code.whitehatjr.com/s/dashboard");
+ 
+ }
 }
 
